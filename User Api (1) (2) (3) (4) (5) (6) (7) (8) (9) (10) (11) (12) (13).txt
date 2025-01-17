@@ -1,0 +1,31 @@
+endpoint name
+method:Get
+Description:retraive all user details
+responce example:
+ 
+[
+  {
+    "userId": 123,
+    "name": "John Doe",
+    "email": "john@example.com",
+    "orders": [456, 457]
+  },
+  {
+    "userId": 124,
+    "name": "Jane Smith",
+    "email": "jane@example.com",
+    "orders": []
+  }
+]
+
+Endpoint name:/user/id
+Method:GET
+Description:retraive detail of a specific user.
+
+response example.
+{
+  "userId": 123,
+  "name": "John Doe",
+  "email": "john@example.com",
+  "orders": [456, 457]
+}
