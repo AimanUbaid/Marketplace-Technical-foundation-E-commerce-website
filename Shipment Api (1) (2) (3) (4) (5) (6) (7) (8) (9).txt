@@ -1,0 +1,13 @@
+Endpointname:shipment Api
+method: Get
+Description:track the shipment status
+of a spesific order using a third party shipment tracking Api...
+
+
+{
+  "shipmentId": 789,
+  "orderId": 456,
+  "status": "In Transit",
+  "expectedDeliveryDate": "2025-01-20",
+  "trackingUrl": "https://shipmenttracker.com/track/789"
+}
