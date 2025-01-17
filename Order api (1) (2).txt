@@ -1,0 +1,64 @@
+Endpoint name:/Order
+Method:post
+Description:Create a new order in a system
+Example..
+
+{
+  "userId": 123,
+  "products": [
+    {
+      "productId": 1,
+      "quantity": 2
+    },
+    {
+      "productId": 2,
+      "quantity": 1
+    }
+  ],
+  "paymentStatus": "Paid",
+  "total": 400
+}
+response example
+{
+  "orderId": 456,
+  "userId": 123,
+  "products": [
+    {
+      "productId": 1,
+      "quantity": 2
+    },
+    {
+      "productId": 2,
+      "quantity": 1
+    }
+  ],
+  "paymentStatus": "Paid",
+  "total": 400,
+  "orderDate": "2025-01-17T10:00:00Z",
+  "status": "Pending"
+}
+
+
+Endpoint name:order id
+method-Get
+description:fatch detail of a specific order by its id
+response example....
+
+{
+  "orderId": 456,
+  "userId": 123,
+  "products": [
+    {
+      "productId": 1,
+      "quantity": 2
+    },
+    {
+      "productId": 2,
+      "quantity": 1
+    }
+  ],
+  "paymentStatus": "Paid",
+  "total": 400,
+  "orderDate": "2025-01-17T10:00:00Z",
+  "status": "Shipped"
+}
